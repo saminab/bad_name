@@ -5,14 +5,14 @@ Takes in a string of arbitrary (but assumed to be non-zero) length; returns a
 string of the same length, but reversed.
 '''
 # I change the name of the function on purpose
-def reverse_string_my(mystring):
+def reverse_string(mystring):
     '''
     Reverses the ordering of characters in a string using a simple loop.
     Input: a string.
     Output: a completely reversed version of that string, including all characters.
     '''
     
-    reversed_string_my= ""
+    reversed_string= ""
 
     if len(mystring)  ==0 :
     
@@ -23,14 +23,14 @@ def reverse_string_my(mystring):
         
         
         
-        reversed_string_my += mystring[ i ]
+        reversed_string+= mystring[ i ]
     
-    return reversed_string_my
+    return reversed_string
 
 mystring="Go green!"
 
 print("\noriginal string:    ",mystring,"\n")
-reversed = reverse_string_my(mystring)
+reversed = reverse_string(mystring)
 
 
 
