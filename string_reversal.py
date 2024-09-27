@@ -14,12 +14,12 @@ def reverse_string(mystring  ):
     
     reversed_string= ""
 
-    if len(mystring )  ==0 :
+    if len(mystring)  ==0 :
     
-        return []
+        return ""
     
     # BUG: the 0 in the range() method should be -1, given how range() works!
-    for i in range(len( mystring)-1,0,-1 ):  
+    for i in range(len( mystring)-1,-1,-1 ):  
         
         
         
