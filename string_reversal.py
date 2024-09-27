@@ -5,7 +5,7 @@ Takes in a string of arbitrary (but assumed to be non-zero) length; returns a
 string of the same length, but reversed.
 '''
 
-def reverse_string(mystring  ):
+def reverse_string(mystring):
     '''Reverses the ordering of the string
     
     Inputs: 
@@ -15,7 +15,7 @@ def reverse_string(mystring  ):
         - reversed_string: a reversed version of the original string
     '''
     
-    reversed_string= ""
+    reversed_string = " "
 
     if len(mystring) == 0:
         return []
