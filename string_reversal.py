@@ -20,7 +20,6 @@ def reverse_string(mystring):
     if len(mystring) == 0:
         return []
     
-    # BUG: the 0 in the range() method should be -1, given how range() works!
     for i in range(len( mystring)-1, 0, -1):  
         reversed_string += mystring[i]
     
