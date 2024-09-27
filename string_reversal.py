@@ -4,7 +4,6 @@ Simple (broken) program to reverse a string.  Look for 'BUG' to find the bug.
 Takes in a string of arbitrary (but assumed to be non-zero) length; returns a 
 string of the same length, but reversed.
 '''
-
 def reverse_string(mystring):
     '''Reverses the ordering of the string
     
@@ -13,16 +12,22 @@ def reverse_string(mystring):
         
     Output:
         - reversed_string: a reversed version of the original string
+
     '''
     
     reversed_string = " "
 
-    if len(mystring) == 0:
-        return []
+    if len(mystring)  ==0 :
     
-    for i in range(len( mystring)-1, 0, -1):  
-        reversed_string += mystring[i]
+        return ""
     
+    # BUG: the 0 in the range() method should be -1, given how range() works!
+    for i in range(len( mystring)-1,-1,-1 ):  
+        
+        
+        
+        reversed_string+= mystring[ i ]
+
     return reversed_string
 
 mystring="Go green!"
